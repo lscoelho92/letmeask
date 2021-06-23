@@ -1,13 +1,18 @@
+import { Link } from 'react-router-dom';
 import { Button } from '../components/Button';
+
+// import { useContext } from 'react';
+// import { AuthContext } from '../contexts/AuthContext';
 
 import "../styles/pages/home.scss";
 
 import illustrationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';
-import googleIconImg from '../assets/images/google-icon.svg';
 
 
 export function NewRoom() {
+  // const { user } = useContext(AuthContext);
+
   return (
     <div id="home-page">
       <aside>
@@ -29,7 +34,7 @@ export function NewRoom() {
             </Button>
           </form>
           <p>
-            Want to join an existing room? <a href="#">Click here</a>
+            Want to join an existing room? <Link to="/">Click here</Link>
           </p>
         </div>
       </main>
